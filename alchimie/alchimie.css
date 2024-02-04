@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(233, 166, 91);
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+#ressources {
+    display: flex;
+    justify-content: space-around;
+    border-top: solid black 4px;
+    border-bottom: solid black 4px;
+    background-color: rgba(197, 92, 17, 0.911);
+    text-align: center;
+    height: auto;
+    align-items: center;
+}
+
+#ressources img {
+    width: 4vw;
+    cursor: pointer;
+}
+
+#melange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#melange img{
+    width: 28vw;
+}
+
+#melangeButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.6; /* Réduit l'opacité pour indiquer que le bouton est désactivé */
+    pointer-events: none; /* Empêche les interactions avec le bouton */
+}
+
+#downPage {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 1.3vw;
+    font-weight: 900;
+
+}
+
+#right{
+    border-right: solid 4px black; 
+    border-left: solid 4px black; 
+    border-bottom: solid 4px black; 
+    height: 33vw;
+    width: 20vw;
+    background-color: rgb(164, 115, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#left{
+    border-right: solid 4px black; 
+    border-left: solid 4px black; 
+    border-bottom: solid 4px black; 
+    height: 33vw;
+    width: 20vw;
+    background-color: rgb(164, 115, 51);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+#right img {
+
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 20px;
+}

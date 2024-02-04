@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V_1 Combat</title>
+
+    <link rel="stylesheet" href="combat.css">
+    <!-- <script type="module" defer src="../data/data1.js"></script> -->
+    <script type="module" defer src="../data/combat.js"></script>
+</head>
+<body>
+    
+    <nav>
+        <h2><a href="../index.html">V_0 Ecran d'acceuil</a></h2>
+        <h1><a href="#">V_5 Combat</a></h1>
+        <h2><a href="../alchimie/alchimie.html">V_5 Alchimie</a></h2>
+    </nav>
+
+    <div id="downPage">
+    <div id="left">
+        <h2>Inventaire :</h2>
+        <ul id="inventory-list">
+            <!-- Les éléments d'inventaire seront ajoutés ici -->
+        </ul>
+    </div>
+
+
+    <div class="centre">
+        <div id="frame">
+            <!-- Boutons pour changer les frames -->
+            <button onclick="changeFrame('../alchimie/alchimie.html')">Onglet 1</button>
+            <!-- Bouton pour masquer/afficher la zone de l'iframe -->
+            <button onclick="toggleFrame()">Masquer/Afficher Onglet</button>
+    
+            <!-- Zone pour afficher les frames -->
+            <div id="frameContainer">
+                <iframe id="contentFrame" src="../alchimie/alchimie.html"></iframe>
+            </div>
+        </div>
+    
+        <div id="CHASSER">
+            <!-- Bouton pour déclencher le combat -->
+            <button id="btnChasser" >CHASSER</button>
+            <!-- Zone pour afficher le résultat du combat -->
+            <div id="console">
+    
+            </div>
+            <div id="actions">
+                <button id="forceBtn">Force</button>
+                <button id="agiliteBtn">Agilité</button>
+                <button id="enduranceBtn">Endurance</button>
+                <button id="intelligenceBtn">Intelligence</button>
+                <button id="charismeBtn">Charisme</button>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div id="right">
+
+        <p id="pseudo"></p>
+        <p id="niveau"></p>
+        <p id="exp"></p>
+        <p id="lvlAlchimie"></p>
+        <p id="xpAlchimie"></p>
+
+        <p id="pv"></p>
+        <p id="mana"></p>
+        <p id="potentiel"></p>
+        <p id="fatigue"></p>
+        <p id="etat"></p>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+<script>
+    // Fonction pour changer le contenu de l'iframe
+    function changeFrame(url) {
+        document.getElementById("contentFrame").src = url;
+    }
+     // Fonction pour masquer/afficher la zone de l'iframe
+     function toggleFrame() {
+            var frameContainer = document.getElementById("frameContainer");
+            frameContainer.style.display = frameContainer.style.display === "block" ? "none" : "block";
+        }
+</script>
